@@ -6,12 +6,11 @@ C‼ ←^ $"H~_!⊓(_|°⊸Class)" ⊢
 D  ← C!Div
 
 Prim ← °json&fras"./primitives.json"
-
-&fwa "./index.html" utf₈ H!(
+&fwa "./build/index.html" utf₈ H!(
   Html {
     Head {
       Title "Uiua Cheatsheet"
-      Meta!°⊸Charset"utf8" Link!°⊸⊃Rel Href"stylesheet""./out.css"
+      Meta!°⊸Charset"utf8" Link!°⊸⊃Rel Href"stylesheet""main.css"
       Meta!°⊸⊃Name Content"viewport" "width=device-width, initial-scale=1.0"
     }
     C!Body"bg-stone-800" {

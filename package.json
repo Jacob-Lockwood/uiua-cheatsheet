@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "tailwindcss": "^4.1.18",
-    "@tailwindcss/cli": "^4.1.18"
+    "@tailwindcss/cli": "^4.1.18",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.18"
   },
   "scripts": {
-    "tw": "pnpm dlx @tailwindcss/cli -i ./in.css -o ./out.css --watch",
-    "ua": "uiua watch main.ua",
-    "ls": "pnpm dlx live-server",
+    "tw": "pnpm dlx @tailwindcss/cli -i ./src/main.css -o ./build/main.css --watch",
+    "ua": "uiua watch src/main.ua",
+    "ls": "cd build && pnpm dlx live-server",
     "dev": "pnpm run ua | pnpm run tw | pnpm run ls"
   }
 }
