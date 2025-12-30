@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "tailwindcss": "^4.1.18",
+    "@tailwindcss/cli": "^4.1.18"
+  },
+  "scripts": {
+    "tw": "pnpm dlx @tailwindcss/cli -i ./in.css -o ./out.css --watch",
+    "ua": "uiua watch main.ua",
+    "ls": "pnpm dlx live-server",
+    "dev": "pnpm run ua | pnpm run tw | pnpm run ls"
+  }
+}

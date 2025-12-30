@@ -1,0 +1,29 @@
+# Experimental!
+H ~ "gh: uiua-lang/webua"
+
+C! ←^ $"H~_!°⊸Class" ⊢
+C‼ ←^ $"H~_!⊓(_|°⊸Class)" ⊢
+D  ← C!Div
+
+Prim ← °json&fras"./primitives.json"
+
+&fwa "./index.html" utf₈ H!(
+  Html {
+    Head {
+      Title "Uiua Cheatsheet"
+      Meta!°⊸Charset"utf8" Link!°⊸⊃Rel Href"stylesheet""./out.css"
+      Meta!°⊸⊃Name Content"viewport" "width=device-width, initial-scale=1.0"
+    }
+    C!Body"bg-stone-800" {
+      D"bg-white max-w-6xl mx-auto p-4 my-20" {
+        D"flex items-end justify-between" {C!H₁"text-4xl" "Uiua cheatsheet" "Uiua 0.18.0"}
+        D"grid grid-cols-3 gap-6" (
+          ⊃◴(⊕∩□⊛)◡⋅⍚(get"class") °mapPrim
+          ⍚(Div⊓{H₂|Ul⍚(
+                Li⍣($"_ _"˜(get"glyph")|⊙◌)
+              )})
+        )
+      }
+    }
+  }
+)
