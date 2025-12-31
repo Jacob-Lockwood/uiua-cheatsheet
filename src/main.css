@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@font-face {
+  font-family: Uiua386;
+  src: local("Uiua386"), url("Uiua386.ttf") format("truetype");
+}
 @theme {
   --font-sans: Uiua386;
 }
